@@ -1,0 +1,12 @@
+.confirmationMessage{
+    color: #fff;
+}
+
+.confirmationTitle{
+    font-size: 0;
+}
+
+.confirmationTitle::after{
+    content: "Prueba de titulo";
+    font-size: 25px;
+}

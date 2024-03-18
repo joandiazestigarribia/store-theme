@@ -6,6 +6,8 @@
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
       "__fold__",
+      "flex-layout.row#bannerAsesoramiento",
+      "rich-text#test",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       "info-card#home",
@@ -14,9 +16,10 @@
       "newsletter"
     ]
   },
-
   "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+    "children": [
+      "slider-layout#demo-images"
+    ],
     "props": {
       "height": 570,
       "preload": true,
@@ -44,7 +47,6 @@
       "blockClass": "carousel"
     }
   },
-
   "rich-text#shelf-title": {
     "props": {
       "text": "## Summer",
@@ -52,11 +54,17 @@
     }
   },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "children": [
+      "list-context.product-list#demo1"
+    ]
   },
   "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
     }
@@ -73,7 +81,6 @@
       "blockClass": "shelf"
     }
   },
-
   "info-card#home": {
     "props": {
       "id": "info-card-home",
@@ -87,18 +94,80 @@
       "textAlignment": "center"
     }
   },
-
   "rich-text#question": {
     "props": {
       "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
       "blockClass": "question"
     }
   },
-
   "rich-text#link": {
     "props": {
       "text": "\n**Reach us at**\nwww.vtex.com.br",
       "blockClass": "link"
+    }
+  },
+  "flex-layout.row#bannerAsesoramiento": {
+    "title": "Banner whatsapp asesoramiento",
+    "children": [
+      "flex-layout.col#bannerAsesoramiento"
+    ],
+    "props": {
+      "fullWidth": false,
+      "verticalAlign": "middle",
+      "blockClass": "bannerAsesorate"
+    }
+  },
+  "flex-layout.col#bannerAsesoramiento": {
+    "children": [
+      "responsive-layout.desktop#asesorateDesk",
+      "responsive-layout.tablet#asesorateTablet",
+      "responsive-layout.phone#asesorateMobile"
+    ],
+    "props": {
+      "fullWidth": false,
+      "verticalAlign": "middle",
+      "blockClass": "bannerAsesorate"
+    }
+  },
+  "responsive-layout.desktop#asesorateDesk": {
+    "children": [
+      "image#bannerAsesorate-Desk"
+    ]
+  },
+  "responsive-layout.tablet#asesorateTablet": {
+    "children": [
+      "image#bannerAsesorate-Desk"
+    ]
+  },
+  "responsive-layout.phone#asesorateMobile": {
+    "children": [
+      "image#bannerAsesorate-Mobile"
+    ]
+  },
+  "image#bannerAsesorate-Desk": {
+    "props": {
+      "title": "Whatsapp",
+      "src": "/arquivos/sliderBannerCompleto1-desk.png",
+      "alt": "Asesoramiento personalizado",
+      "blockClass": "bannerAsesorate",
+      "link": {
+        "url": ""
+      }
+    }
+  },
+  "image#bannerAsesorate-Mobile": {
+    "props": {
+      "src": "/arquivos/sliderBannerCompleto-mob.png",
+      "alt": "Recibí asesoramiento personalizado",
+      "blockClass": "bannerAsesorate",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "rich-text#test": {
+    "props": {
+      "text": "TEXTO TEST"
     }
   }
 }

@@ -1,0 +1,12 @@
+/* :global(.vtex-order-placed-2-x-confirmationMessage) strong {
+    color: #000 !important;
+}
+
+:global(.vtex-order-placed-2-x-confirmationMessage) strong::before{
+    content: "hola que tal ";
+    font-weight: 400;
+}
+:global(.vtex-order-placed-2-x-confirmationMessage) strong::after{
+    content: " esto es una prueba";
+    font-weight: 400;
+} */
