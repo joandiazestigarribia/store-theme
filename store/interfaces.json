@@ -1,6 +1,11 @@
 {
-    "pagination": {
-      "component": "Pagination"
+  "pagination": {
+    "component": "Pagination"
+  },
+  "custom-shelf": {
+    "component": "CustomShelf",
+    "content": {
+      "$ref": "app:innew.store-theme#/definitions/CustomShelf"
     }
   }
-  
+}

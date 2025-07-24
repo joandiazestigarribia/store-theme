@@ -1,0 +1,70 @@
+{
+    "definitions": {
+        "CustomShelf": {
+            "type": "object",
+            "properties": {
+                "productCluster": {
+                    "title": "Coleccion",
+                    "type": "string",
+                    "default": "151"
+                },
+                "sliderLayoutProps": {
+                    "title": "Configuración del Slider",
+                    "type": "object",
+                    "properties": {
+                        "showNavigationArrows": {
+                            "title": "Mostrar flechas",
+                            "type": "string",
+                            "enum": [
+                                "desktopOnly",
+                                "mobileOnly",
+                                "always",
+                                "never"
+                            ],
+                            "enumNames": [
+                                "Solo desktop",
+                                "Solo mobile",
+                                "Siempre",
+                                "Nunca"
+                            ],
+                            "widget": {
+                                "ui:widget": "radio"
+                            },
+                            "default": "desktopOnly"
+                        },
+                        "showPaginationDots": {
+                            "title": "Mostrar dots",
+                            "type": "string",
+                            "enum": [
+                                "desktopOnly",
+                                "mobileOnly",
+                                "always",
+                                "never"
+                            ],
+                            "enumNames": [
+                                "Solo desktop",
+                                "Solo mobile",
+                                "Siempre",
+                                "Nunca"
+                            ],
+                            "widget": {
+                                "ui:widget": "radio"
+                            },
+                            "default": "mobileOnly"
+                        },
+                        "itemsPerPage": {
+                            "type": "number",
+                            "title": "Ítems por página",
+                            "default": 4
+                        },
+                        "autoPlay": {
+                            "type": "boolean",
+                            "title": "Autoplay",
+                            "default": true
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

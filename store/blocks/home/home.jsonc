@@ -2,9 +2,8 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "flex-layout.row#deals",
+      "custom-shelf"
+      /* "flex-layout.row#deals",
       "__fold__",
       "flex-layout.row#bannerAsesoramiento",
       "rich-text#test",
@@ -13,8 +12,19 @@
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
-      "newsletter"
+      "newsletter" */
     ]
+  },
+  "custom-shelf": {
+    "props": {
+      "sliderLayoutProps": {
+        "showNavigationArrows": "always",
+        "showPaginationDots": "never",
+        "itemsPerPage": 4,
+        "autoPlay": true,
+        "infinite": true
+      }
+    }
   },
   "list-context.image-list#demo": {
     "children": [
